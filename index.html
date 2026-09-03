@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>P4N — Learn, Apply, Innovate</title>
+
+    <!-- Description -->
+    <meta name="description"
+        content="Learn programming, build real-world projects, and grow your software development skills with P4N.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!-- =========================================
+     AMBIENT BACKGROUND
+========================================= -->
+
+    <div class="ambient-background">
+        <div class="background-grid"></div>
+        <div class="ambient-glow glow-one"></div>
+        <div class="ambient-glow glow-two"></div>
+        <div class="ambient-glow glow-three"></div>
+    </div>
+
+    <!-- =========================================
+         PRE LOADER
+    ========================================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                P4N
+            </div>
+            <div class="preloader-bottom">
+                <span class="preloader-status">
+                    INITIALIZING EXPERIENCE
+                </span>
+                <span class="preloader-percentage" id="loader-percentage">
+                    0%
+                </span>
+            </div>
+            <div class="preloader-line">
+                <span id="loader-progress"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================= 
+    CUSTOM CURSOR
+    ========================================= -->
+    <!-- <div class="cursor" id="cursor">
+        <span class="cursor-dot"></span>
+    </div> -->
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="container navbar-inner">
+
+            <!-- Logo -->
+
+            <a href="#" class="navbar-logo">
+                P4N<span>.</span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#membership" class="nav-link">
+                    Membership
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About Us
+                </a>
+
+                <a href="#services" class="nav-link">
+                    Services
+                </a>
+
+                <a href="#portfolio" class="nav-link">
+                    Portfolio
+                </a>
+
+                <a href="#blogs" class="nav-link">
+                    Blogs
+                </a>
+
+
+                <!-- P4N Learn -->
+
+                <div class="nav-dropdown">
+
+                    <button class="nav-link dropdown-toggle" type="button">
+
+                        P4N Learn
+
+                        <span class="dropdown-arrow">
+                            ↓
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <div class="dropdown-heading">
+                            P4N LEARN
+                        </div>
+
+
+                        <a href="#frameworks">
+                            Frameworks
+                        </a>
+
+                        <a href="#programming-languages">
+                            Programming Languages
+                        </a>
+
+                        <a href="#mobile-application">
+                            Mobile Application
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="nav-link">
+                    Contact Us
+                </a>
+
+            </nav>
+
+
+            <!-- Right CTA -->
+
+            <div class="navbar-actions">
+
+                <a href="#contact" class="navbar-cta">
+                    WhatsApp
+                    <span>↗</span>
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-menu" id="mobile-menu">
+
+            <nav class="mobile-nav">
+
+                <a href="#home">
+                    <span>01</span>
+                    Home
+                </a>
+
+                <a href="#membership">
+                    <span>02</span>
+                    Membership
+                </a>
+
+                <a href="#about">
+                    <span>03</span>
+                    About Us
+                </a>
+
+                <a href="#services">
+                    <span>04</span>
+                    Services
+                </a>
+
+                <a href="#portfolio">
+                    <span>05</span>
+                    Portfolio
+                </a>
+
+                <a href="#blogs">
+                    <span>06</span>
+                    Blogs
+                </a>
+
+
+                <div class="mobile-learn">
+
+                    <div class="mobile-learn-title">
+
+                        <span>07</span>
+
+                        P4N Learn
+
+                    </div>
+
+
+                    <a href="#frameworks">
+                        Frameworks
+                    </a>
+
+                    <a href="#programming-languages">
+                        Programming Languages
+                    </a>
+
+                    <a href="#mobile-application">
+                        Mobile Application
+                    </a>
+
+                </div>
+
+
+                <a href="#contact">
+                    <span>08</span>
+                    Contact Us
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="hero-glow"></div>
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <div class="section-label hero-label">
+                        P4N / PROGRAMMING & SOFTWARE
+                    </div>
+                    <h1 class="hero-title">
+                        Solutions
+                        <span>for your</span>
+                        Programming
+                    </h1>
+                    <p class="hero-description">
+                        Learn programming, build real-world
+                        projects, and grow your software
+                        development skills with P4N.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="hero-button primary">
+                            Get Started
+                            <span>↗</span>
+                        </a>
+                        <a href="#services" class="hero-button secondary">
+                            Explore Services
+                            <span>↓</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+                    <div class="hero-card">
+                        <div class="hero-card-glow"></div>
+                        <div class="hero-card-top">
+                            <span>P4N</span>
+                            <span>01/01</span>
+                        </div>
+                        <div class="hero-card-content">
+                            <span class="hero-card-symbol"></span>
+                            <div>
+                                <small>
+                                    BUILD / LEARN / CREATE
+                                </small>
+                                <strong>
+                                    CODE
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="hero-card-bottom">
+                            <span>PROGRAMMING</span>
+                            <span>EST. 2014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- =========================================
+                 TECHNOLOGY STRIP
+            ========================================== -->
+
+            <div class="hero-marquee">
+
+                <div class="hero-marquee-track">
+
+                    <span>JAVASCRIPT</span>
+                    <i>✦</i>
+
+                    <span>PYTHON</span>
+                    <i>✦</i>
+
+                    <span>JAVA</span>
+                    <i>✦</i>
+
+                    <span>HTML 5</span>
+                    <i>✦</i>
+
+                    <span>SQL</span>
+                    <i>✦</i>
+
+                    <span>REACT</span>
+                    <i>✦</i>
+
+                    <span>NODE JS</span>
+                    <i>✦</i>
+
+                    <span>ANGULAR</span>
+                    <i>✦</i>
+
+                    <span>SPRING BOOT</span>
+                    <i>✦</i>
+
+
+                    <!-- Duplicate for seamless animation -->
+
+                    <span>JAVASCRIPT</span>
+                    <i>✦</i>
+
+                    <span>PYTHON</span>
+                    <i>✦</i>
+
+                    <span>JAVA</span>
+                    <i>✦</i>
+
+                    <span>HTML 5</span>
+                    <i>✦</i>
+
+                    <span>SQL</span>
+                    <i>✦</i>
+
+                    <span>REACT</span>
+                    <i>✦</i>
+
+                    <span>NODE JS</span>
+                    <i>✦</i>
+
+                    <span>ANGULAR</span>
+                    <i>✦</i>
+
+                    <span>SPRING BOOT</span>
+                    <i>✦</i>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =========================================
+        OUR MISSION
+        ========================================= -->
+
+        <section class="mission" id="about">
+
+            <div class="container mission-inner">
+
+                <div class="mission-heading">
+
+                    <div class="section-label">
+                        OUR MISSION
+                    </div>
+
+                    <h2 class="heading-lg">
+                        Learn.
+                        <span>Apply.</span>
+                        Innovate.
+                    </h2>
+
+                </div>
+
+
+                <div class="mission-content">
+
+                    <div class="mission-intro glass-card">
+
+                        <h3>
+                            🚀 Welcome to Codes With Pankaj – Learn, Apply, Innovate!
+                        </h3>
+
+                        <p>
+                            Hi, I’m Pankaj Chouhan, a software engineer with 10+ years
+                            of experience, passionate about helping others master coding
+                            and problem-solving. My mission is to bridge the gap between
+                            theory and real-world application, making coding simple,
+                            engaging, and career-focused.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mission-reasons">
+
+                        <div class="mission-reasons-heading">
+                            <span>WHY LEARN WITH ME?</span>
+                        </div>
+
+
+                        <div class="reason-grid">
+
+                            <div class="reason-card glass-card">
+                                <span class="reason-number">01</span>
+                                <h4>Hands-On Training</h4>
+                                <p>
+                                    Work on real-world projects to gain practical skills.
+                                </p>
+                            </div>
+
+
+                            <div class="reason-card glass-card">
+                                <span class="reason-number">02</span>
+                                <h4>Beginner to Pro</h4>
+                                <p>
+                                    Courses for all levels, from first-timers to professionals.
+                                </p>
+                            </div>
+
+
+                            <div class="reason-card glass-card">
+                                <span class="reason-number">03</span>
+                                <h4>Job-Ready Skills</h4>
+                                <p>
+                                    Learn what tech companies actually look for.
+                                </p>
+                            </div>
+
+
+                            <div class="reason-card glass-card">
+                                <span class="reason-number">04</span>
+                                <h4>Engaging & Fun</h4>
+                                <p>
+                                    No boring lectures, just interactive, practical learning.
+                                </p>
+                            </div>
+
+
+                            <div class="reason-card glass-card">
+                                <span class="reason-number">05</span>
+                                <h4>Industry Insights</h4>
+                                <p>
+                                    Stay updated with best coding practices, tips, and trends.
+                                </p>
+                            </div>
+
+
+                            <div class="reason-card glass-card">
+                                <span class="reason-number">06</span>
+                                <h4>Community Support</h4>
+                                <p>
+                                    Join a thriving community of like-minded learners.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mission-ending glass-card">
+
+                        <p>
+                            💡 Whether you're learning your first programming language
+                            or sharpening advanced skills, Codes With Pankaj provides a
+                            structured, fun, and effective way to succeed.
+                        </p>
+
+                        <div class="mission-cta">
+                            📌 Start your journey today & build the future with code! 🚀
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =========================================
+        SERVICES
+        ========================================= -->
+
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <!-- Section Header -->
+
+                <div class="services-header">
+
+                    <div class="section-label">
+                        SERVICES
+                    </div>
+
+                    <h2 class="heading-lg">
+                        Learn.
+                        <span>Build.</span>
+                        Grow.
+                    </h2>
+
+                    <p class="services-intro">
+                        Our project management skills are technical and scientific
+                        and our research and development solutions have everything
+                        which needs planning and management with organisations.
+                    </p>
+
+                </div>
+
+
+                <!-- Services Grid -->
+
+                <div class="services-grid">
+
+
+                    <!-- Python -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            01
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                PROGRAMMING
+                            </span>
+
+                            <h3>
+                                Python Tutorial
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- JavaScript -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            02
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                PROGRAMMING
+                            </span>
+
+                            <h3>
+                                Java Script
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- R Programming -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            03
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                PROGRAMMING
+                            </span>
+
+                            <h3>
+                                R Programming
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- MongoDB -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            04
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                DATABASE
+                            </span>
+
+                            <h3>
+                                MongoDB Tutorial
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- C -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            05
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                PROGRAMMING
+                            </span>
+
+                            <h3>
+                                C Programming
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- SQL -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            06
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                DATABASE
+                            </span>
+
+                            <h3>
+                                SQL
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- Java -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            07
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                PROGRAMMING
+                            </span>
+
+                            <h3>
+                                Java Tutorial
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- HTML -->
+
+                    <a href="https://tutorial.codeswithpankaj.com/" class="service-card" target="_blank">
+
+                        <span class="service-number">
+                            08
+                        </span>
+
+                        <div class="service-card-content">
+
+                            <span class="service-category">
+                                WEB DEVELOPMENT
+                            </span>
+
+                            <h3>
+                                HTML 5
+                            </h3>
+
+                        </div>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =========================================
+        LEARNING PATHS
+        ========================================= -->
+
+        <section class="learning-paths" id="learning-paths">
+
+            <div class="container">
+
+                <div class="learning-header">
+
+                    <div class="section-label">
+                        LEARNING PATHS
+                    </div>
+
+                    <h2 class="heading-lg">
+                        Find your
+                        <span>path.</span>
+                    </h2>
+
+                    <p>
+                        Don't know where to start or what course to take next?
+                        Let us make it really simple for you.
+                    </p>
+
+                </div>
+
+
+                <div class="learning-grid">
+
+
+                    <!-- FRONT-END -->
+
+                    <article class="learning-card">
+
+                        <div class="learning-card-top">
+
+                            <span class="learning-number">
+                                01
+                            </span>
+
+                            <span class="learning-type">
+                                FRONT-END
+                            </span>
+
+                        </div>
+
+
+                        <div class="learning-card-content">
+
+                            <h3>
+                                Front-end Path
+                            </h3>
+
+                            <p>
+                                Every web or mobile application has 2 parts:
+                                a front-end and a back-end. The front-end is what
+                                the user sees and interacts with. It’s the app on
+                                your phone or the website you visit. So, front-end
+                                developers are in charge of building beautiful,
+                                interactive user interfaces.
+                            </p>
+
+                            <p>
+                                The average salary for a front-end Developer is
+                                $102,768 per year in the United States. As a
+                                front-end developer, you should know HTML, CSS,
+                                JavaScript and at least one of the popular
+                                JavaScript frameworks/libraries that are used
+                                for building client apps, including Angular,
+                                React and Vue.
+                            </p>
+
+                        </div>
+
+
+                        <div class="learning-card-footer">
+
+                            <span>
+                                HTML / CSS / JS
+                            </span>
+
+                            <span class="learning-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BACK-END -->
+
+                    <article class="learning-card">
+
+                        <div class="learning-card-top">
+
+                            <span class="learning-number">
+                                02
+                            </span>
+
+                            <span class="learning-type">
+                                BACK-END
+                            </span>
+
+                        </div>
+
+
+                        <div class="learning-card-content">
+
+                            <h3>
+                                Back-end Path
+                            </h3>
+
+                            <p>
+                                Every web or mobile application has 2 parts:
+                                a front-end and a back-end. The front-end is what
+                                the user sees and interacts with. It’s the app on
+                                your phone or the website you visit. But the
+                                front-end is only the surface. All the data is
+                                stored and processed on the back-end.
+                            </p>
+
+                            <p>
+                                So, back-end developers are in charge of anything
+                                that powers the front-end, including working with
+                                databases, building web services/APIs, integration
+                                with other apps (eg Facebook, Twitter, etc),
+                                implementing business rules and workflows, etc.
+                            </p>
+
+                        </div>
+
+
+                        <div class="learning-card-footer">
+
+                            <span>
+                                DATABASE / API / LOGIC
+                            </span>
+
+                            <span class="learning-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =========================================
+     STATISTICS
+========================================= -->
+
+        <section class="statistics" id="statistics">
+
+            <div class="container">
+
+                <div class="statistics-header">
+
+                    <div class="section-label">
+                        BY THE NUMBERS
+                    </div>
+
+                    <h2 class="heading-lg">
+                        Built on
+                        <span>experience.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="statistics-grid">
+
+                    <div class="stat-card">
+
+                        <span class="stat-label">
+                            CLIENTS
+                        </span>
+
+                        <div class="stat-number">
+                            <span class="counter" data-target="274">0</span>
+                        </div>
+
+                        <span class="stat-plus">+</span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-label">
+                            PROJECTS
+                        </span>
+
+                        <div class="stat-number">
+                            <span class="counter" data-target="421">0</span>
+                        </div>
+
+                        <span class="stat-plus">+</span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-label">
+                            HOURS OF SUPPORT
+                        </span>
+
+                        <div class="stat-number">
+                            <span class="counter" data-target="1364">0</span>
+                        </div>
+
+                        <span class="stat-plus">+</span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-label">
+                            HARD WORKERS
+                        </span>
+
+                        <div class="stat-number">
+                            <span class="counter" data-target="18">0</span>
+                        </div>
+
+                        <span class="stat-plus">+</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
