@@ -1,0 +1,431 @@
+/* =========================================
+   MEMBERSHIP HERO
+========================================= */
+
+.membership-hero {
+    position: relative;
+    padding: 190px 0 130px;
+    overflow: hidden;
+}
+
+.membership-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 80px;
+    right: 5%;
+
+    background: var(--accent);
+    opacity: 0.06;
+
+    border-radius: 50%;
+    filter: blur(120px);
+
+    pointer-events: none;
+}
+
+.membership-hero-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 900px;
+}
+
+.membership-hero-content .section-label {
+    margin-bottom: 30px;
+}
+
+.membership-hero h1 {
+    margin: 0;
+
+    max-width: 900px;
+
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    font-weight: 500;
+}
+
+.membership-hero h1 span {
+    display: block;
+    color: var(--accent);
+}
+
+.membership-hero-content>p {
+    max-width: 680px;
+
+    margin: 40px 0;
+
+    color: var(--text-muted);
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.membership-price {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+
+    margin-bottom: 35px;
+
+    font-family: var(--font-mono);
+}
+
+.membership-price span {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.membership-price strong {
+    color: var(--text);
+    font-size: 25px;
+}
+
+.membership-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 16px 24px;
+
+    background: var(--accent);
+    border: 1px solid var(--accent);
+
+    color: var(--bg);
+
+    text-decoration: none;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+
+    transition: var(--transition);
+}
+.subscribe-button{
+
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    border-radius: 50px;
+
+    padding: 16px ;
+
+    background: var(--border);
+    border: 1px solid var(--accent);
+
+    color: var(--bg);
+
+    text-decoration: none;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+
+    transition: var(--transition);    
+}
+
+.membership-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 45px rgba(183, 211, 107, 0.2);
+}
+
+
+/* =========================================
+   SUBSCRIPTION
+========================================= */
+
+.subscription {
+    padding: 120px 0;
+}
+
+.subscription-header {
+    margin-bottom: 70px;
+}
+
+.subscription-header .heading-lg {
+    margin: 20px 0 0;
+}
+
+.subscription-header .heading-lg span {
+    color: var(--accent);
+}
+
+.subscription-content {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 80px;
+}
+
+.subscription-feature,
+.subscription-benefits {
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid var(--border);
+
+    backdrop-filter: blur(15px);
+}
+
+.feature-number {
+    display: block;
+
+    margin-bottom: 30px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+
+    color: var(--accent);
+}
+
+.subscription-feature h3,
+.subscription-benefits h3 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.subscription-benefits ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 35px 0 0;
+}
+
+.subscription-benefits li {
+    position: relative;
+
+    padding: 15px 0 15px 25px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.subscription-benefits li::before {
+    content: "→";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--accent);
+}
+
+
+/* =========================================
+   PRICING
+========================================= */
+
+.pricing {
+    padding: 120px 0 160px;
+}
+
+.pricing-header {
+    margin-bottom: 70px;
+}
+
+.pricing-header .heading-lg {
+    margin: 20px 0 15px;
+}
+
+.pricing-header .heading-lg span {
+    color: var(--accent);
+}
+
+.pricing-header p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 16px;
+}
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.pricing-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015));
+
+    border: 1px solid var(--border);
+
+    backdrop-filter: blur(18px);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(183, 211, 107, 0.3);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.pricing-card.featured {
+    border-color: rgba(183, 211, 107, 0.4);
+
+    box-shadow:
+        0 0 60px rgba(183, 211, 107, 0.06);
+}
+
+.pricing-badge {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 6px 10px;
+
+    background: var(--accent);
+
+    color: var(--bg);
+
+    font-family: var(--font-mono);
+    font-size: 8px;
+    letter-spacing: 0.1em;
+}
+
+.pricing-card-top {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+}
+
+.plan-number {
+    color: var(--accent);
+}
+
+.plan-name {
+    color: var(--text-muted);
+}
+
+.pricing-card h3 {
+    margin: 35px 0 10px;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.price {
+    color: var(--accent);
+
+    font-family: var(--font-mono);
+
+    font-size: 38px;
+}
+
+.pricing-card>p {
+    min-height: 85px;
+
+    margin: 20px 0;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.validity {
+    margin-bottom: 25px;
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+}
+
+.plan-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 16px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid var(--accent);
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+
+    transition: var(--transition);
+}
+
+.plan-button:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.plan-features {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    position: relative;
+
+    padding: 12px 0 12px 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.plan-features li::before {
+    content: "✔";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--accent);
+}
