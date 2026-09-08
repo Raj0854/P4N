@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P4N — Membership</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="IMG/logo.png" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/membership.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- AMBIENT BACKGROUND -->
+    <div class="ambient-background">
+
+        <div class="background-grid"></div>
+
+        <div class="ambient-glow glow-one"></div>
+        <div class="ambient-glow glow-two"></div>
+        <div class="ambient-glow glow-three"></div>
+
+    </div>
+
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+
+        <div class="preloader-content">
+
+            <div class="preloader-logo">
+                P4N
+            </div>
+
+            <div class="preloader-bottom">
+
+                <span class="preloader-status">
+                    INITIALIZING EXPERIENCE
+                </span>
+
+                <span class="preloader-percentage" id="loader-percentage">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="preloader-line">
+                <span id="loader-progress"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor">
+        <span class="cursor-dot"></span>
+    </div>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="container navbar-inner">
+
+            <!-- Logo -->
+
+            <a href="#" class="navbar-logo">
+                P4N<span>.</span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav">
+
+                <a href="index.html" class="nav-link ">
+                    Home
+                </a>
+
+                <a href="membership.html" class="nav-link active">
+                    Membership
+                </a>
+
+                <a href="index.html#about" class="nav-link">
+                    About Us
+                </a>
+
+                <a href="index.html#services" class="nav-link">
+                    Services
+                </a>
+
+                <a href="https://github.com/Pankaj-Str" target="_blank" class="nav-link">
+                    Portfolio
+                </a>
+
+                <a href="blogs.html" class="nav-link">
+                    Blogs
+                </a>
+
+
+                <!-- P4N Learn -->
+
+
+                <li class="nav-dropdown">
+                    <button class="nav-link" type="button">
+                        P4N Learn
+                        <span class="dropdown-arrow">></span>
+                    </button>
+
+                    <div class="nav-dropdown-menu">
+
+                        <!-- FRAMEWORKS -->
+                        <div class="dropdown-group">
+                            <span class="dropdown-title">Frameworks</span>
+
+                            <a href="https://tutorial.codeswithpankaj.com/node-js" target="_blank"
+                                rel="noopener noreferrer">
+                                Node JS
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/angular" target="_blank"
+                                rel="noopener noreferrer">
+                                Angular
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/spring-boot" target="_blank"
+                                rel="noopener noreferrer">
+                                Spring Boot
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/react" target="_blank"
+                                rel="noopener noreferrer">
+                                React
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/bootstrap" target="_blank"
+                                rel="noopener noreferrer">
+                                Bootstrap
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/jquery" target="_blank"
+                                rel="noopener noreferrer">
+                                jQuery
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/spring-security-5" target="_blank"
+                                rel="noopener noreferrer">
+                                Spring Security 5
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/apache-hadoop" target="_blank"
+                                rel="noopener noreferrer">
+                                Apache Hadoop
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/apache-spark" target="_blank"
+                                rel="noopener noreferrer">
+                                Apache Spark
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/cordova" target="_blank"
+                                rel="noopener noreferrer">
+                                Cordova
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/firebase" target="_blank"
+                                rel="noopener noreferrer">
+                                Firebase
+                            </a>
+                        </div>
+
+
+                        <!-- PROGRAMMING LANGUAGES -->
+                        <div class="dropdown-group">
+                            <span class="dropdown-title">Programming Languages</span>
+
+                            <a href="https://tutorial.codeswithpankaj.com/javascript" target="_blank"
+                                rel="noopener noreferrer">
+                                JavaScript
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/python" target="_blank"
+                                rel="noopener noreferrer">
+                                Python
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/php" target="_blank"
+                                rel="noopener noreferrer">
+                                PHP
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/cpp" target="_blank"
+                                rel="noopener noreferrer">
+                                C++
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/c-sharp" target="_blank"
+                                rel="noopener noreferrer">
+                                C#
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/typescript" target="_blank"
+                                rel="noopener noreferrer">
+                                TypeScript
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/linux-shell" target="_blank"
+                                rel="noopener noreferrer">
+                                Linux Shell
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/c" target="_blank" rel="noopener noreferrer">
+                                C
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/ruby-on-rails" target="_blank"
+                                rel="noopener noreferrer">
+                                Ruby on Rails
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/swift" target="_blank"
+                                rel="noopener noreferrer">
+                                Swift
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/java-se" target="_blank"
+                                rel="noopener noreferrer">
+                                JAVA SE
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/java-ee" target="_blank"
+                                rel="noopener noreferrer">
+                                JAVA EE
+                            </a>
+                        </div>
+
+
+                        <!-- MOBILE APPLICATION -->
+                        <div class="dropdown-group">
+                            <span class="dropdown-title">Mobile Application</span>
+
+                            <a href="https://tutorial.codeswithpankaj.com/android" target="_blank"
+                                rel="noopener noreferrer">
+                                Android
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/ios" target="_blank"
+                                rel="noopener noreferrer">
+                                iOS
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/ionic" target="_blank"
+                                rel="noopener noreferrer">
+                                Ionic
+                            </a>
+
+                            <a href="https://tutorial.codeswithpankaj.com/hybrid" target="_blank"
+                                rel="noopener noreferrer">
+                                Hybrid
+                            </a>
+                        </div>
+
+                    </div>
+                </li>
+
+                <a href="index.html#contact" class="nav-link">
+                    Contact Us
+                </a>
+
+            </nav>
+
+
+            <!-- Right CTA -->
+
+            <div class="navbar-actions">
+
+                <a href="#contact" class="navbar-cta">
+                    WhatsApp
+                    <span>↗</span>
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-menu" id="mobile-menu">
+
+            <nav class="mobile-nav">
+
+                <a href="#home">
+                    <span>01</span>
+                    Home
+                </a>
+
+                <a href="#membership">
+                    <span>02</span>
+                    Membership
+                </a>
+
+                <a href="#about">
+                    <span>03</span>
+                    About Us
+                </a>
+
+                <a href="#services">
+                    <span>04</span>
+                    Services
+                </a>
+
+                <a href="#portfolio">
+                    <span>05</span>
+                    Portfolio
+                </a>
+
+                <a href="#blogs">
+                    <span>06</span>
+                    Blogs
+                </a>
+
+
+                <div class="mobile-learn">
+
+                    <div class="mobile-learn-title">
+
+                        <span>07</span>
+
+                        P4N Learn
+
+                    </div>
+
+
+                    <a href="#frameworks">
+                        Frameworks
+                    </a>
+
+                    <a href="#programming-languages">
+                        Programming Languages
+                    </a>
+
+                    <a href="#mobile-application">
+                        Mobile Application
+                    </a>
+
+                </div>
+
+
+                <a href="#contact">
+                    <span>08</span>
+                    Contact Us
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MEMBERSHIP HERO -->
+    <main>
+
+        <section class="membership-hero">
+
+            <div class="container">
+
+                <div class="membership-hero-content">
+
+                    <div class="section-label">
+                        P4N / MEMBERSHIP
+                    </div>
+
+                    <h1>
+                        Unlock the world
+                        <span>of Coding</span>
+                    </h1>
+
+                    <p>
+                        Gain unlimited access to all current and future
+                        courses, and become the best coder you can be.
+                        Learn at your own pace, with no limits, and stay
+                        ahead of the curve with constantly updated content.
+                    </p>
+
+                    <div class="membership-price subscribe-button">
+
+                        <span>
+                            Subscribe For
+                        </span>
+
+                        <strong>
+                            $95.27
+                        </strong>
+
+                    </div>
+
+                    <a href="#pricing" class="membership-button">
+                        Explore Plans
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SUBSCRIPTION -->
+        <section class="subscription">
+
+            <div class="container">
+
+                <div class="subscription-header">
+
+                    <div class="section-label">
+                        P4N / SUBSCRIPTION
+                    </div>
+
+                    <h2 class="heading-lg">
+                        About the
+                        <span>Subscription</span>
+                    </h2>
+
+                    <div class="section-label">
+                        Highly Practical Learning
+                    </div>
+                </div>
+
+
+                <div class="subscription-benefits">
+
+                    <span class="feature-number">
+                        01
+                    </span>
+
+                    <h3>
+                        What You’ll Gain
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Master in-demand programming languages
+                            and tools
+                        </li>
+
+                        <li>
+                            Build real-world apps to showcase in your
+                            portfolio and wow employers
+                        </li>
+
+                        <li>
+                            Explore a wide range of topics like web
+                            development, mobile apps, and data science
+                        </li>
+
+                        <li>
+                            Unlock new career opportunities and boost
+                            your earning potential
+                        </li>
+
+                        <li>
+                            Stay current with the latest technologies
+                            and industry trends
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- PRICING -->
+        <section class="pricing" id="pricing">
+
+            <div class="container">
+
+                <div class="pricing-header">
+
+                    <div class="section-label">
+                        P4N / PRICING
+                    </div>
+
+                    <h2 class="heading-lg">
+                        Choose your
+                        <span>pricing plan</span>
+                    </h2>
+
+                    <p>
+                        Find one that works for you
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-grid">
+
+
+                    <!-- BASIC -->
+                    <article class="pricing-card">
+
+                        <div class="pricing-card-top">
+
+                            <span class="plan-number">
+                                01
+                            </span>
+
+                            <span class="plan-name">
+                                BASIC PLAN
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Basic Plan
+                        </h3>
+
+                        <div class="price">
+                            ₹399
+                        </div>
+
+                        <p>
+                            Ideal for beginners looking to start their
+                            tech journey. Get access to a private community,
+                            tech tips, and early content.
+                        </p>
+
+                        <div class="validity">
+                            Valid for 3 months
+                        </div>
+
+                        <a href="#" class="plan-button">
+                            Select Plan
+                            <span>↗</span>
+                        </a>
+
+                        <ul class="plan-features">
+
+                            <li>
+                                Access to a private community forum
+                                or Discord channel
+                            </li>
+
+                            <li>
+                                Monthly newsletter with tech tips,
+                                tutorials, and updates
+                            </li>
+
+                            <li>
+                                Early access to new blog posts or videos
+                            </li>
+
+                            <li>
+                                Discounts on select services or products
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <!-- PRO -->
+                    <article class="pricing-card featured">
+
+                        <div class="pricing-badge">
+                            POPULAR
+                        </div>
+
+                        <div class="pricing-card-top">
+
+                            <span class="plan-number">
+                                02
+                            </span>
+
+                            <span class="plan-name">
+                                PRO PLAN
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Pro Plan
+                        </h3>
+
+                        <div class="price">
+                            ₹3,999
+                        </div>
+
+                        <p>
+                            Perfect for those wanting to deepen their
+                            skills with exclusive content, live Q&As,
+                            and more.
+                        </p>
+
+                        <div class="validity">
+                            Valid for 6 months
+                        </div>
+
+                        <a href="#" class="plan-button">
+                            Select Plan
+                            <span>↗</span>
+                        </a>
+
+                        <ul class="plan-features">
+
+                            <li>
+                                All Basic Plan benefits
+                            </li>
+
+                            <li>
+                                Exclusive tutorials and courses
+                            </li>
+
+                            <li>
+                                Live Q&A sessions with pankaj
+                            </li>
+
+                            <li>
+                                Members-only webinars and workshops
+                            </li>
+
+                            <li>
+                                Priority support for queries
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <!-- PREMIUM -->
+                    <article class="pricing-card">
+
+                        <div class="pricing-card-top">
+
+                            <span class="plan-number">
+                                03
+                            </span>
+
+                            <span class="plan-name">
+                                PREMIUM PLAN
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Premium Plan
+                        </h3>
+
+                        <div class="price">
+                            ₹7,999
+                        </div>
+
+                        <p>
+                            For tech professionals seeking personalized
+                            learning.
+                        </p>
+
+                        <div class="validity">
+                            Valid for 12 months
+                        </div>
+
+                        <a href="#" class="plan-button">
+                            Select Plan
+                            <span>↗</span>
+                        </a>
+
+                        <ul class="plan-features">
+
+                            <li>
+                                All Pro Plan benefits
+                            </li>
+
+                            <li>
+                                One-on-one consultations with pankaj
+                            </li>
+
+                            <li>
+                                Personalized code reviews and feedback
+                            </li>
+
+                            <li>
+                                Access to premium resources like eBooks
+                                and templates
+                            </li>
+
+                            <li>
+                                Invitations to exclusive events and meetups
+                            </li>
+
+                            <li>
+                                Team training and workshops
+                            </li>
+
+                            <li>
+                                Priority consultancy bookings
+                            </li>
+
+                            <li>
+                                Explore Paid GitHub Repositories
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-bottom">
+
+            <div>
+                © Copyright p4n. All Rights Reserved
+            </div>
+
+            <div>
+                <a href="https://rajgupta-olive.vercel.app/" target="_blank "><u><i><b>Designed by Raj
+                                Gupta</b></i></u></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
