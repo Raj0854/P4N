@@ -187,3 +187,34 @@ if (statisticsSection) {
     );
 
 }
+/* =================================
+   P4N LEARN DROPDOWN
+================================= */
+
+const learnDropdown = document.querySelector(".nav-dropdown");
+const learnDropdownToggle = document.querySelector(".nav-dropdown-toggle");
+
+if (learnDropdown && learnDropdownToggle) {
+
+    learnDropdownToggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        learnDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (event) => {
+
+        if (!learnDropdown.contains(event.target)) {
+            learnDropdown.classList.remove("open");
+        }
+
+    });
+
+    const dropdownLinks = learnDropdown.querySelectorAll("a");
+
+    dropdownLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            learnDropdown.classList.remove("open");
+        });
+    });
+}
