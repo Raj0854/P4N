@@ -10,6 +10,72 @@
 
 }
 
+/* =================================
+   MOBILE P4N LEARN DROPDOWN
+================================= */
+
+@media (max-width: 900px) {
+
+    .nav-dropdown {
+        width: 100%;
+    }
+
+    .nav-dropdown-toggle {
+        width: 100%;
+        justify-content: space-between;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    .nav-dropdown-menu {
+        position: static;
+
+        width: 100%;
+        padding: 15px 0;
+
+        display: none;
+        grid-template-columns: 1fr;
+
+        transform: none;
+
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .nav-dropdown.open .nav-dropdown-menu {
+        display: grid;
+        transform: none;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .nav-dropdown:hover .dropdown-arrow {
+        transform: none;
+    }
+
+    .nav-dropdown.open .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-group {
+        padding: 10px 0;
+    }
+
+    .dropdown-group a {
+        padding: 8px 10px;
+    }
+}
+
 /* =========================================
    TABLET / MOBILE NAVBAR
 ========================================= */
@@ -290,15 +356,19 @@
 
         padding: 13px 16px;
     }
+
     .hero-visual {
         height: 360px;
     }
+
     .hero-card {
         width: 250px;
     }
+
     .hero-card-content strong {
         font-size: 4rem;
     }
+
     .hero-card-symbol {
 
         width: 70px;
@@ -306,6 +376,7 @@
     }
 
 }
+
 @media (max-width: 900px) {
 
     .mission {
@@ -343,6 +414,7 @@
     }
 
 }
+
 /* =========================================
    SERVICES RESPONSIVE
 ========================================= */
@@ -388,6 +460,7 @@
     }
 
 }
+
 /* =========================================
    LEARNING PATHS RESPONSIVE
 ========================================= */
@@ -430,6 +503,263 @@
 
     .learning-card-content p {
         font-size: 13px;
+    }
+
+}
+
+/* =========================================
+   GET APPLICATION RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .application {
+        padding: 110px 0;
+    }
+
+    .application-inner {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .application-content {
+        max-width: 700px;
+    }
+
+    .application-visual {
+        min-height: auto;
+    }
+
+    .application-card {
+        width: min(100%, 560px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .application {
+        padding: 90px 0;
+    }
+
+    .application-inner {
+        gap: 50px;
+    }
+
+    .application-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .application-card {
+        padding: 15px;
+        transform: none;
+    }
+
+    .application-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .application-image {
+        margin: 15px 0;
+    }
+
+    .application-glow {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* =========================================
+   WEB DEVELOPMENT RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .web-development {
+        padding: 110px 0;
+    }
+
+    .web-development-main {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .web-development-header {
+        margin-bottom: 60px;
+    }
+
+    .web-development-content {
+        max-width: 800px;
+    }
+
+    .web-development-visual {
+        min-height: auto;
+    }
+
+    .development-card {
+        width: min(100%, 600px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .web-development {
+        padding: 90px 0;
+    }
+
+    .web-development-header {
+        margin-bottom: 45px;
+    }
+
+    .web-development-main {
+        gap: 50px;
+    }
+
+    .web-development-content {
+        gap: 30px;
+    }
+
+    .web-development-intro {
+        grid-template-columns: 35px 1fr;
+        gap: 15px;
+    }
+
+    .web-development p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .development-block {
+        padding: 22px;
+    }
+
+    .development-block-header h3 {
+        font-size: 21px;
+    }
+
+    .development-card {
+        padding: 15px;
+        transform: none;
+    }
+
+    .development-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .development-code {
+        padding: 18px;
+    }
+
+    .code-line {
+        grid-template-columns: 25px 1fr;
+        gap: 8px;
+        font-size: 10px;
+    }
+}
+
+/* =========================================
+   FOOTER AREA RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .footer-content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .newsletter-section,
+    .useful-links-section {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .useful-links-section {
+        border-right: none;
+    }
+
+    .contact-section {
+        border-right: 1px solid var(--border);
+    }
+
+    .message-section {
+        border-bottom: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .footer-area {
+        padding: 90px 0 0;
+    }
+
+    .rapid-section {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 40px;
+
+        padding: 45px 25px;
+    }
+
+    .rapid-mark {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-section,
+    .useful-links-section,
+    .contact-section,
+    .message-section {
+        min-height: auto;
+
+        padding: 40px 25px;
+
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .message-section {
+        border-bottom: none;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .popular-topics {
+        padding: 80px 5vw;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-card {
+        min-height: 190px;
     }
 
 }
